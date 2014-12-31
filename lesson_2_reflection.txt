@@ -13,13 +13,26 @@ The staging area helps to preview and plan the commitment. It can groups files a
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+Only git add the files which is logically related, and commit them in one push. Other files not related to this logically change, commit another time.
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+when a new version which is not considered as an official/main stream of the project is needed. Or some experimental things want to try off the main stream. The branches can go parallel with the master branch, and when they are tested and verified, they can be merged with the master branch.
+
 How do the diagrams help you visualize the branch structure?
+
+a graph clearly showes where the braches are rooted, and I am sure it will do so in the merging as well.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
-What are the pros and cons of Gitâ€™s automatic merging vs. always doing merges
+merging two branches with master will result a new commit on master branch. Show in diagram clearly demonstrate the operation.
+
+What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+
+pros: save time on merging.
+cons: may come with something don't want.  Not sure if will cause error.
+
+always manually: a lot of checking and hand working.
